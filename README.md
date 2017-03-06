@@ -1,24 +1,26 @@
-# README
+# Matterhorn, a Blue Mountain Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## License
 
-Things you may want to cover:
+All source code in this application is available under the GPL license.
 
-* Ruby version
 
-* System dependencies
+## Getting Started
 
-* Configuration
+To get started with the app, clone the repo and then install the needed gems:
 
-* Database creation
+```
+$ bundle install --without production
+```
 
-* Database initialization
+Then migrate the database:
 
-* How to run the test suite
+```
+$rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+And finally run the test suite to verify that everything is working correctly:
 
-* Deployment instructions
-
-* ...
+```
+$ rails test
+```
